@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/CadetBlue"
+       android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/btnButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:text="@string/btnButtonText" >
+      </Button>
+
+      <Button
+          android:id="@+id/btnNextNext"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/btnNextNext" >
+      </Button>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:background="@color/Khaki"
+       android:layout_weight="1"
+
+       android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tvDisplay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_gravity="center"
+          android:textSize="30dp"
+          android:textColor="@color/DimGray"
+          android:textStyle="bold|italic"
+          android:text="Display Text..." />
+
+
+      <EditText
+          android:id="@+id/etNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:textSize="30dp"
+         android:textColor="@color/BlueViolet"
+         android:textStyle="bold|italic"
+         android:hint="숫자를 입력하세요...">
+      </EditText>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/LightSlateGray"
+       android:orientation="vertical">
+
+      <Button
+          android:id="@+id/btnBottom"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:layout_margin="2dp"
+          android:text="@string/btnBottom"
+          >
+      </Button>
+   </LinearLayout>
+
+
+</LinearLayout>
